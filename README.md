@@ -54,9 +54,9 @@ Passionate Full Stack Developer with a strong foundation in Java, JavaScript, an
 
 | Degree | Institution | Year | Score |
 |--------|------------|------|-------|
-| **B.E. – Information Science & Engineering** | AMC Engineering College, Bangalore | 2022 – Present | CGPA: 7.94 |
-| **PUC – PCMB (Science)** | Florence PU College, Bangalore | Apr 2022 | — |
-| **SSLC** | Sri Chaitanya Techno School, Anantapur | Mar 2020 | — |
+| **B.E. – Information Science & Engineering** | AMC Engineering College, Bangalore | 2022 – Present | CGPA: 7.94|
+| **PUC – PCMB (Science)** | Florence PU College, Bangalore | Apr 2022 | 65.6|
+| **SSLC** | Sri Chaitanya Techno School, Anantapur | Mar 2020 | 100 |
 
 ---
 
