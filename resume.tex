@@ -1,0 +1,185 @@
+%-------------------------
+% ATS-Friendly Resume – Pola Manoj Kumar
+% Compiler: XeLaTeX or pdfLaTeX (Overleaf default)
+%-------------------------
+\documentclass[10pt, a4paper]{article}
+
+\usepackage[
+  top=12mm, bottom=10mm,
+  left=14mm, right=14mm
+]{geometry}
+
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+% ── Hyperlink styling ──────────────────────────────────────────────
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue!60!black,
+  linkcolor=blue!60!black
+}
+
+% ── No page numbers ────────────────────────────────────────────────
+\pagestyle{empty}
+
+% ── Section heading style ──────────────────────────────────────────
+\definecolor{accent}{RGB}{26, 58, 92}
+
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0em}{}
+  [\color{accent}\titlerule]
+
+\titlespacing{\section}{0pt}{6pt}{4pt}
+
+% ── Helpers ────────────────────────────────────────────────────────
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\newcommand{\resumeItem}[1]{%
+  \item\small{#1}
+}
+
+\newcommand{\jobheading}[4]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} $|$ \textit{#2, #3} & \small\textit{#4}
+  \end{tabularx}
+  \vspace{-2pt}
+}
+
+\newcommand{\projectheading}[2]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & \small\href{#2}{\underline{GitHub}}
+  \end{tabularx}
+  \vspace{-2pt}
+}
+
+\newcommand{\projectheadingnl}[1]{%
+  \noindent\textbf{#1}
+  \vspace{-2pt}
+}
+
+\newenvironment{itemizeCustom}{%
+  \begin{itemize}[leftmargin=12pt, itemsep=1pt, topsep=2pt, parsep=0pt]
+}{%
+  \end{itemize}
+}
+
+%===================================================================
+\begin{document}
+%===================================================================
+
+% ── NAME & CONTACT ─────────────────────────────────────────────────
+\begin{center}
+  {\LARGE\bfseries\color{accent} Pola Manoj Kumar}\\[4pt]
+  \small
+  +91 82176 75741 \;$|$\;
+  \href{mailto:manojkumar.mk0965@gmail.com}{manojkumar.mk0965@gmail.com} \;$|$\;
+  Bangalore, India \\[2pt]
+  \href{https://www.linkedin.com/in/pola-manoj-kumar-30b528306}{LinkedIn}
+  \;$|$\;
+  \href{https://github.com/manojkumar675}{GitHub}
+  \;$|$\;
+  \href{https://leetcode.com/u/ManojKumar675/}{LeetCode}
+\end{center}
+
+\vspace{-4pt}
+
+% ── PROFESSIONAL SUMMARY ───────────────────────────────────────────
+\section{Professional Summary}
+Full Stack Developer (MERN) with hands-on experience building and deploying responsive
+web applications. Proficient in Java, Python, React.js, Node.js, and RESTful API integration.
+Practical knowledge of DevOps practices including CI/CD pipelines, Docker, AWS cloud
+deployment, and Linux environments. Experienced with ML model development using
+Scikit-learn and BERT. Seeking a Full Stack Developer role to deliver scalable,
+user-centric software solutions.
+
+% ── TECHNICAL SKILLS ───────────────────────────────────────────────
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{} >{\bfseries}l X @{}}
+  Languages       & Java, JavaScript (ES6+), Python \\[2pt]
+  Frontend        & React.js, HTML5, CSS3, Responsive Design \\[2pt]
+  Backend         & Node.js, Express.js, REST APIs \\[2pt]
+  Database        & MongoDB, SQL \\[2pt]
+  DevOps \& Cloud & Docker, CI/CD (Jenkins / GitHub Actions), AWS (EC2, S3), Linux, Git, Postman \\[2pt]
+  ML / AI         & Scikit-learn, Random Forest, Logistic Regression, BERT, Streamlit \\[2pt]
+  Concepts        & Data Structures \& Algorithms, OOP, DBMS, System Design, Agile \\
+\end{tabularx}
+
+% ── WORK EXPERIENCE ────────────────────────────────────────────────
+\section{Work Experience}
+
+\jobheading{Technical Trainee – Java Full Stack \& DevOps}{Dhee Coding Lab}{Bangalore}{Feb 2026 – Present}
+\begin{itemizeCustom}
+  \resumeItem{Developing proficiency in Core Java, OOP principles, and Data Structures \& Algorithms through structured hands-on training.}
+  \resumeItem{Implemented CI/CD pipelines using Jenkins and GitHub Actions; containerised applications with Docker and deployed to cloud environments.}
+  \resumeItem{Configured Linux servers, managed Git-based version control workflows, and applied DevOps lifecycle best practices including monitoring and rollback strategies.}
+\end{itemizeCustom}
+
+% ── INTERNSHIP EXPERIENCE ──────────────────────────────────────────
+\section{Internship Experience}
+
+\jobheading{Web Development Intern}{Prinston Smart Engineers – Myntrn Technology}{Bangalore}{Jul 2024 – Aug 2024}
+\begin{itemizeCustom}
+  \resumeItem{Built and deployed 5+ responsive web pages using React.js, Node.js, Express.js, HTML5, and CSS3, improving UI consistency across the application.}
+  \resumeItem{Integrated 3+ RESTful APIs and engineered backend logic with Express.js, reducing manual data handling and improving response efficiency.}
+  \resumeItem{Collaborated in an Agile team to ship features on schedule and resolve production issues, contributing to a smoother end-user experience.}
+\end{itemizeCustom}
+
+% ── PROJECTS ───────────────────────────────────────────────────────
+\section{Projects}
+
+\projectheading{BERT-Based Multilingual Medical Chatbot with Hospital Finder}{https://github.com/manojkumar675}
+\begin{itemizeCustom}
+  \resumeItem{Built a full-stack web app delivering multilingual medical advice using BERT for semantic text matching and Streamlit for an interactive UI.}
+  \resumeItem{Integrated a real-time hospital locator with geolocation-based filtering and mapping, connecting users with nearby healthcare facilities instantly.}
+\end{itemizeCustom}
+
+\vspace{4pt}
+
+\projectheading{Automated CI/CD Deployment Pipeline}{https://github.com/manojkumar675}
+\begin{itemizeCustom}
+  \resumeItem{Designed an end-to-end CI/CD pipeline using Jenkins and GitHub Actions to automate build, test, and deployment workflows, reducing manual effort significantly.}
+  \resumeItem{Containerised a Node.js application with Docker and deployed to AWS EC2 with staging and production environment separation; configured monitoring and rollback strategies.}
+\end{itemizeCustom}
+
+\vspace{4pt}
+
+\projectheading{Student Record Manager (MERN Stack)}{https://github.com/manojkumar675}
+\begin{itemizeCustom}
+  \resumeItem{Designed and deployed a full CRUD application using MongoDB, Express.js, React.js, and Node.js with JWT-based authentication and a clean responsive UI.}
+\end{itemizeCustom}
+
+% ── EDUCATION ──────────────────────────────────────────────────────
+\section{Education}
+
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+  \textbf{B.E. – Information Science \& Engineering} & \textit{2022 – Present (Expected 2026)} \\
+  AMC Engineering College, Bangalore \hspace{4pt} CGPA: 7.94 / 10 & \\[4pt]
+  \textbf{SSLC} & \textit{Mar 2020} \\
+  Sri Chaitanya Techno School, Anantapur \hspace{4pt} Score: 100/100 & \\
+\end{tabularx}
+
+% ── CERTIFICATIONS ─────────────────────────────────────────────────
+\section{Certifications}
+\begin{itemizeCustom}
+  \resumeItem{\textbf{Full Stack Web Development} – Myntrn Technology \hfill \textit{Jul 2024}}
+  \resumeItem{\textbf{DSA using Java} – NPTEL \hfill \textit{Jan – Oct 2024}}
+  \resumeItem{\textbf{AWS Solutions Architecture} – Forage \hfill \textit{Mar 2025}}
+  \resumeItem{\textbf{IBM Watson Text-to-Speech} – IBM SkillsBuild \hfill \textit{Oct 2024}}
+\end{itemizeCustom}
+
+% ── LANGUAGES ──────────────────────────────────────────────────────
+\section{Languages}
+\small English (C1 – Advanced) \;$|$\; Telugu (C2 – Fluent) \;$|$\; Kannada (C2 – Fluent) \;$|$\; Hindi (B2 – Intermediate)
+
+\end{document}

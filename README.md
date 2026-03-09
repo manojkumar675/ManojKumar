@@ -86,6 +86,13 @@ current_focus: Java Full Stack with Cloud & DevOps
 
 </td>
 </tr>
+</table>
+
+---
+
+## 🧑‍🎓 Internship Experience
+
+<table>
 <tr>
 <td>
 
